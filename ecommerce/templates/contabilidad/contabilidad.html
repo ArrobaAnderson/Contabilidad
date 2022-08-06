@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+      <div class="container-fluid">
+           <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2">
+               <div class="col">
+                    <div class="card" style="height:15rem">
+                      <img src="{% static 'img/cards/ejercicio.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+                      <div class="card-body text-center">
+                           <a class="text-decoration-none" href="{% url 'ejercicio' %}">
+                            <h5 class="card-title text-success">Ejercicio</h5>
+                           </a>
+                           <p class="card-text">Tiempo de vida economica y comercial</p>
+                      </div>
+                    </div>
+               </div>
+              <div class="col">
+                <div class="card" style="height:15rem">
+                  <img src="{% static 'img/cards/libromayor.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+                  <div class="card-body text-center">
+                       <a class="text-decoration-none" href="{% url 'libromayor' %}">
+                        <h5 class="card-title text-success">Libro mayor</h5>
+                       </a>
+                       <p class="card-text">Reflejos de cuantas del balance, gastos e ingresos de la empresa</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="height:15rem" >
+                  <img src="{% static 'img/cards/diario.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+                   <div class="card-body text-center">
+                    <a class="text-decoration-none" href="{% url 'diario' %}">
+                        <h5 class="card-title text-success">Diario</h5>
+                    </a>
+                    <p class="card-text">Registro cronologico de todas las operaciones economicas que la empresa hace diariamente</p>
+                  </div>
+                </div>
+              </div>
+           </div>
+      </div>
+{% endblock %}

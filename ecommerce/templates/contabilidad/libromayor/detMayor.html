@@ -1,0 +1,45 @@
+{% extends 'consulta.html' %}
+{% load static %}
+
+{% block columns %}
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-2">
+                <label for="inputAddress" class="form-label">id: 01</label>
+            </div>
+            <div class="col-md-2">
+                <label for="inputAddress" class="form-label">Ejercicio: 2022</label>
+            </div>
+            <div class="col-md-2">
+                <label for="inputAddress" class="form-label">Mes: Enero</label>
+            </div>
+        </div>
+    </div>
+    <tr class="text-center">
+        <th scope="col" style="width: 5%;">id</th>
+        <th scope="col" style="width: 5%;">Mayor</th>
+        <th scope="col" style="width: 5%;">Cuenta</th>
+        <th scope="col" style="width: 5%;">Saldo Inicial</th>
+        <th scope="col" style="width: 5%;">Debe</th>
+        <th scope="col" style="width: 5%;">Haber</th>
+        <th scope="col" style="width: 5%;">Saldo Final</th>
+        <th scope="col" style="width: 5%;">Accion</th>
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>01</td>
+      <td>1.111.112</td>
+      <td>0</td>
+      <td>20000</td>
+      <td>20000</td>
+      <td>-</td>
+      <td class="acciones text-center">
+            <a href="#">✏</a>
+            <a href="#">❌</a>
+      </td>
+    </tr>
+
+{% endblock %}

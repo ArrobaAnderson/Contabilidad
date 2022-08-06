@@ -1,0 +1,30 @@
+{% extends 'consulta.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: 5%;">id</th>
+        <th scope="col" style="width: 5%;">Mayor</th>
+        <th scope="col" style="width: 5%;">Diario</th>
+        <th scope="col" style="width: 5%;">Cuenta</th>
+        <th scope="col" style="width: 5%;">Debe</th>
+        <th scope="col" style="width: 5%;">Haber</th>
+        <th scope="col" style="width: 25%;">Concepto</th>
+        <th scope="col" style="width: 5%;">Detalle</tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>01</td>
+      <td>01</td>
+      <td>1.111.112</td>
+      <td>20000</td>
+      <td>20000</td>
+      <td>Por la compra de un vehiculo</td>
+      <td>
+          <a href="{% url 'detDiario' %}">Consulta</a>
+      </td>
+  </tr>
+
+{% endblock %}

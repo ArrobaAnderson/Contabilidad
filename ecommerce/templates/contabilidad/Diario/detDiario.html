@@ -1,0 +1,55 @@
+{% extends 'consulta.html' %}
+{% load static %}
+
+{% block columns %}
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-2">
+                <label for="inputAddress" class="form-label">id: 01</label>
+            </div>
+            <div class="col-md-2">
+                <label for="inputAddress" class="form-label">Mayor: 01</label>
+            </div>
+            <div class="col-md-2">
+                <label for="inputAddress" class="form-label">Fecha: 03/08/2022</label>
+            </div>
+            <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Debe: 20000</label>
+            </div>
+            <div class="col-md-2">
+                <label for="inputAddress" class="form-label">Haber: 20000</label>
+            </div>
+            <div class="col-md-2">
+                <label for="inputAddress" class="form-label">Estado: Activo</label>
+            </div>
+        </div>
+    </div>
+
+    <tr class="text-center">
+        <th scope="col" style="width: 5%;">id</th>
+        <th scope="col" style="width: 5%;">Mayor</th>
+        <th scope="col" style="width: 5%;">Diario</th>
+        <th scope="col" style="width: 5%;">Cuenta</th>
+        <th scope="col" style="width: 5%;">Debe</th>
+        <th scope="col" style="width: 5%;">Haber</th>
+        <th scope="col" style="width: 25%;">Concepto</th>
+        <th scope="col" style="width: 5%;">Accion</th>
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>01</td>
+      <td>01</td>
+      <td>1.111.112</td>
+      <td>20000</td>
+      <td>20000</td>
+      <td>Por la compra de un vehiculo</td>
+      <td class="acciones text-center">
+            <a href="#">✏</a>
+            <a href="#">❌</a>
+      </td>
+    </tr>
+
+{% endblock %}
